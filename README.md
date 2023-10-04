@@ -1,10 +1,10 @@
-#**Calculator**
+**Calculator**
 
-##Base Requirements:
+Base Requirements:
  - [x] Enables simple operations like +,-,/,*
  - [x] Result is evaluated using an eval() function
 
-##Stretch Requirements:
+Stretch Requirements:
 - [x] Subsitutes in values like sin() with Math.sin and ++ with +1
 - [x] Enables result to be saved in a variable like "x"
 - [x] Enables an equation (a combination of variables) to be saved

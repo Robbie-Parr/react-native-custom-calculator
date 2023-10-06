@@ -33,7 +33,7 @@ const Reducer = (state:any,action:AnyAction) => {
                 saveEquationsState = [...state.createdEquations]
             }
             }catch(e){
-                console.log(e)
+                //
             }
             return {...state,
                 inputValue:"",
@@ -47,7 +47,7 @@ const Reducer = (state:any,action:AnyAction) => {
             try{
                 result = eval(state.inputValue)
             }catch(e){
-                console.log(e)
+                //console.log(e)
                 result="!"
             }finally{
                 if(!result && result!="0"){

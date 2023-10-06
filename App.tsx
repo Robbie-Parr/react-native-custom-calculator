@@ -22,9 +22,7 @@ export default function App() {
   return (
     <Provider store={store}>
     {hydration && <View style={styles.container}>
-    <View>
         <Display/>
-      </View>
       <View style={styles.innerContainer}>
         <View style={styles.split80}>
           <InputGrid/>
@@ -43,14 +41,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     flexDirection:"column",
-    height:"100%"
+    alignContent:"center",
+    justifyContent:"center",
   },
   innerContainer: {
-    flexDirection:"row"
+    flexDirection:"row",
+    flex:.95
   },
   split20:{
     flex:.2,
-    backgroundColor:"green"
   },
   split80:{
     flex:.8

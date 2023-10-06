@@ -9,6 +9,8 @@ import useData from './useData';
 const InputGrid = () => {
     const data = useData()
 
+    console.log(data)
+
     return(
         <View style={styles.container}>
             {data.map((row,n) => 
@@ -29,15 +31,15 @@ export default InputGrid;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: 'lightgrey',
       alignItems: 'center',
       justifyContent: 'center',
       flexDirection:"column",
+      paddingBottom:"80%"
     },
 
     row: {
         flex:1,
-        backgroundColor:"lightgrey",
         flexDirection:"row",
         justifyContent:"space-between",
         width:"100%",

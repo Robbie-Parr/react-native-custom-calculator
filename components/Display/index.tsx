@@ -49,17 +49,18 @@ export default Display;
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
+      flex: .1,
       backgroundColor: "grey",
       alignItems: 'center',
       justifyContent: "space-around",
       flexDirection:"row",
       width:"100%",
+      paddingTop:"10%"
     },
     innerContainer:{
         display:'flex',
         flexDirection:"row",
-        flex:.8,
+        flex:1.3,
         backgroundColor:"#9b9b9b",
         marginLeft:"2%"
     },

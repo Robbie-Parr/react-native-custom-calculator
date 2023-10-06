@@ -16,7 +16,7 @@ const Card = ({displayValue,symbol}:Props) => {
             onPress={() => 
                 store.dispatch(create_AddSymbol(displayValue,symbol))}
             style={styles.container}>
-            <Text>{displayValue}</Text>
+            <Text style={{color:"yellow"}}>{displayValue}</Text>
         </TouchableOpacity>
     )
 }
@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: 'blue',
-      margin:"1%",
-      padding:"1%",
+      margin:"3%",
+      padding:"2%",
       alignItems: 'center',
       justifyContent: 'center',
     },
